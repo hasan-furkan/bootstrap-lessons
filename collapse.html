@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <title>Collapse!</title>
+    <style>
+        body {
+            padding: 70px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+    <p>
+        <a href="#content1" class="btn btn-primary" data-bs-toggle="collapse">Link with href</a>
+        <button data-bs-target="#content2" type="button" class="btn btn-primary" data-bs-toggle="collapse">
+            Button
+        </button>
+    </p>
+
+    <div class="card collapse" id="content1">
+        <div class="card-body">
+            Link
+        </div>
+    </div>
+
+
+    <div class="card collapse" id="content2">
+        <div class="card-body">
+            Button
+        </div>
+    </div>
+
+
+
+    <br><br>
+
+    <button class="btn btn-warning" data-bs-toggle="collapse" data-bs-target=".card">Both Of</button>
+
+
+
+    <br><br><br>
+
+    <div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#item1">Accordion Item 1
+                </button>
+            </h2>
+            <div class="collapse accordion-collapse show" id="item1">
+                <div class="accordion-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, earum!
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#item2">Accordion Item 2
+                </button>
+            </h2>
+            <div class="collapse accordion-collapse" id="item2">
+                <div class="accordion-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, earum!
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div>
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#item3">Accordion Item 3
+                </button>
+            </h2>
+            <div class="collapse accordion-collapse" id="item3">
+                <div class="accordion-body">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, earum!
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <title>Tooltip!</title>
+    <style>
+        body {
+            padding: 70px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <button class="btn btn-danger" type="button" data-bs-toggle="tooltip" title="Tooltip Hi!">
+        Tooltip
+    </button>
+    <button class="btn btn-danger" type="button" data-bs-toggle="tooltip" title="Tooltip Hi!"
+        data-bs-placement="bottom">
+        Tooltip
+    </button>
+    <button class="btn btn-danger" type="button" data-bs-toggle="tooltip" title="Tooltip Hi!" data-bs-placement="left">
+        Tooltip
+    </button>
+    <button class="btn btn-danger" type="button" data-bs-toggle="tooltip" data-bs-html="true"
+        title="<em>Tooltip</em> <u>with</u>" data-bs-placement="left">
+        Tooltip
+    </button>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
+        crossorigin="anonymous"></script>
+
+    <script>
+        var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
+        var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
+            return new bootstrap.Tooltip(tooltipTriggerEl)
+        })
+    </script>
+
+</body>
+
+</html>
